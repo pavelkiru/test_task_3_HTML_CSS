@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Watch</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/template.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link href="css/fotorama.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/media.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="js/javascript.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/fotorama.js"></script>		
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script>$('.fotorama').on('fotorama:fullscreenenter', function() {
+		$(this).data('fotorama').setOptions({fit: 'scaledown'});
+	});
+
+	$('.fotorama').on('fotorama:fullscreenexit', function() {
+		$(this).data('fotorama').setOptions({fit: 'cover'});
+	});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="header-context">
+			<div class="header-head">
+
+				<div class="header-head__context">
+
+					<img class="header_menu" src="images/menu.png" alt="меню">
+                    <ul class="header_menu_ul">
+                        <li class="header-navigation__li"><a class="header-navigation__li-a" href="#">watshes</a></li>
+                        <li class="header-navigation__li"><a class="header-navigation__li-a" href="#">services</a> </li>
+                        <li class="header-navigation__li"><a class="header-navigation__li-a" href="#">faqs</a></li>
+                        <li class="header-navigation__li"><a class="header-navigation__li-a" href="#">contact</a></li>
+                        <li class="header-navigation__li"><a class="header-navigation__li-a" href="#">request virtual</a></li>
+                    </ul>
+
+					<div class="header-head__text">
+						<p>Custom Logo Watches & More, Free Shipping & Returns</p>
+					</div>
+					<div class="header-head__icon">
+						<div class="header-head__icon-search show_popup2" rel="popup2">		
+						</div>
+
+						<div class="header-head__icon-cart">
+							<div class="header-head__icon-cart2">	
+								<p class="header-head__icon-cart__p">3</p>
+							</div>
+						</div>
+
+						<div class="header-head__icon-user show_popup" rel="popup1">		
+						</div>
+					</div>
+				</div>	
+			</div>
+
+				<div class="overlay_popup"></div>
+
+                    <div class="popup" id="popup1">
+                        <div class="object">
+                                <form class="popup_form" action="#">             
+                                    <input class="popup_form-input" type="text" placeholder="имя пользователя">
+                                </form> 
+
+                                <form class="popup_form" action="#">             
+                                   <input class="popup_form-input" type="password" placeholder="пароль">                   
+                                </form> 
+                            <button class="popup_button">вход</button>
+                        </div>                       
+                    </div>
+
+ 				<div class="overlay_popup2"></div>
+
+                    <div class="popup2" id="popup2">
+                        <div class="object">
+                                <form class="popup_form" action="#">             
+                                    <input class="popup_form-input" type="search" placeholder="поиск">
+                                </form>                                 
+                            <button class="popup_button">найти</button>
+                        </div>                       
+                    </div>
+
+
+			<div class="header-navigation">
+				<div class="header-navigation__text">
+					<p class="header-navigation__text"><span class="header-navigation__text-span">alw logo</span> American Logo Watch</p>
+				</div>
+
+
+				<div class="header-navigation__nav">
+					<nav>
+						<ul class="header-navigation__ul">
+							<li class="header-navigation__li"><a class="header-navigation__li-a" href="#">watshes</a></li>
+							<li class="header-navigation__li"><a class="header-navigation__li-a" href="#">services</a></li>
+							<li class="header-navigation__li"><a class="header-navigation__li-a" href="#">faqs</a></li>
+							<li class="header-navigation__li"><a class="header-navigation__li-a" href="#">contact</a></li>
+							<li class="header-navigation__li"><a class="header-navigation__li-a" href="#">request virtual</a></li>
+						</ul>
+					</nav>
+				</div>
+
+
+				<div class="header-navigation__tel">
+					<div class="header-navigation__tel-img"></div>
+					<a class="header-navigation__tel-a" href="tel:+18006826772">1 (800) 682 6772</a>
+				</div>
+			</div>
+		</div>	
+
+			<div id="slider">			
+			<div class="slides">
+				<div class="slide">
+					<div class="slide__text">
+						<h1 class="slide__text-h1">custom watches for any occasion</h1>
+						<button class="slide__text-button">design & order</button>
+						<button class="slide__text-button">request virtual sammple</button>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__text">
+						<h1 class="slide__text-h1">custom watches for any occasion</h1>
+						<button class="slide__text-button">design & order</button>
+						<button class="slide__text-button">request virtual sammple</button>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__text">
+						<h1 class="slide__text-h1">custom watches for any occasion</h1>
+						<button class="slide__text-button">design & order</button>
+						<button class="slide__text-button">request virtual sammple</button>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__text">
+						<h1 class="slide__text-h1">custom watches for any occasion</h1>
+						<button class="slide__text-button">design & order</button>
+						<button class="slide__text-button">request virtual sammple</button>
+					</div>
+				</div>
+			</div>
+			<div class="navigation">
+			</div>
+		</div>
+	</header>
+
+	
+
+	<section class="sectOne">		
+		
+			<div class="fotorama" data-width="100%"  data-max-width="100%" data-transition="crossfade" data-direction="rtl" >				 
+				 <div class="sectOne-gradient" data-img="images/watch_background_2.png">
+				 		<div class="sectOne__text">
+							<h2 class="sectOne__text-h2">our store</h2>
+							<p class="sectOne__text-p">As many of you know, our company has a wide field of activity: we are engeged in the development of products, publish and code related articles, and support the Market, where designers publish their products to sell. FS Industries is created for digital designer where flexbility is essential. Designed by Phil Garnham and Fernando Mello, the font combies aesthtics with functional utility, delivering a precise and direct feel.</p>
+						</div>
+				 </div>
+				 <div class="sectOne-gradient" data-img="images/watch_background_2.png">
+				 	<div class="sectOne__text">
+							<h2 class="sectOne__text-h2">our store</h2>
+							<p class="sectOne__text-p">As many of you know, our company has a wide field of activity: we are engeged in the development of products, publish and code related articles, and support the Market, where designers publish their products to sell. FS Industries is created for digital designer where flexbility is essential. Designed by Phil Garnham and Fernando Mello, the font combies aesthtics with functional utility, delivering a precise and direct feel.</p>
+						</div>
+				 </div>
+				 <div class="sectOne-gradient" data-img="images/watch_background_2.png">
+				 	<div class="sectOne__text">
+							<h2 class="sectOne__text-h2">our store</h2>
+							<p class="sectOne__text-p">As many of you know, our company has a wide field of activity: we are engeged in the development of products, publish and code related articles, and support the Market, where designers publish their products to sell. FS Industries is created for digital designer where flexbility is essential. Designed by Phil Garnham and Fernando Mello, the font combies aesthtics with functional utility, delivering a precise and direct feel.</p>
+						</div>
+				 </div>
+				 <div class="sectOne-gradient" data-img="images/watch_background_2.png">
+				 	<div class="sectOne__text">
+							<h2 class="sectOne__text-h2">our store</h2>
+							<p class="sectOne__text-p">As many of you know, our company has a wide field of activity: we are engeged in the development of products, publish and code related articles, and support the Market, where designers publish their products to sell. FS Industries is created for digital designer where flexbility is essential. Designed by Phil Garnham and Fernando Mello, the font combies aesthtics with functional utility, delivering a precise and direct feel.</p>
+						</div>
+				 </div>
+			</div>
+	</section>
+
+
+	<section class="sectTwo">
+
+		<div class="tabs">
+
+			<div class="tabs-header">
+				<div>
+					<h3 class="sectTwo-h3">collections</h3>
+				</div>
+
+				<div>
+					<div class="tab-h active" data-tab = "0">latest</div>
+					<div class="tab-h" data-tab = "1">popular</div>		
+				</div>
+			</div>
+
+			<div class="tabs-body">				
+
+				<div class="tab-b tab-b-display" id="tabs-body__slider">				
+
+					<button id="slider-left"><img class="slider-left-img" src="images/back_arrow_big.png" alt="стрелка назад"></button>
+					<button id="slider-right"><img class="slider-right-img" src="images/forward_arrow_big.png" alt="стрелка вперед"></button>
+						
+						<div id="tabs-body__polosa">						
+							<div class="tabs-body__polosa-block">
+								<div class="tabs-body__polosa-block__2">
+									<img src="images/watch_1.png" alt="фотография часов">
+									<h4 class="polosa-block-h4">adriatica adr</h4>
+									<p class="polosa-block-p">$650, 00</p>
+								</div>
+							</div>
+
+							<div class="tabs-body__polosa-block">
+								<div class="tabs-body__polosa-block__2">
+									<img src="images/watch_2.png" alt="фотография часов">
+									<h4 class="polosa-block-h4">seico snzgo7k1</h4>
+									<p class="polosa-block-p">$125, 00</p>
+								</div>
+							</div>
+								
+							<div class="tabs-body__polosa-block">
+								<div class="tabs-body__polosa-block__2">
+									<img src="images/watch_3.png" alt="фотография часов">
+									<h4 class="polosa-block-h4">roamer rm 220837</h4>
+									<p class="polosa-block-p">$250, 00</p>
+								</div>
+							</div>
+
+							<div class="tabs-body__polosa-block">
+								<div class="tabs-body__polosa-block__2">
+									<img src="images/watch_1.png" alt="фотография часов">
+									<h4 class="polosa-block-h4">adriatica adr</h4>
+									<p class="polosa-block-p">$650, 00</p>
+								</div>
+							</div>
+
+							<div class="tabs-body__polosa-block">
+								<div class="tabs-body__polosa-block__2">
+									<img src="images/watch_2.png" alt="фотография часов">
+									<h4 class="polosa-block-h4">adriatica adr</h4>
+									<p class="polosa-block-p">$650, 00</p>
+								</div>
+							</div>
+
+							<div class="tabs-body__polosa-block">
+								<div class="tabs-body__polosa-block__2">
+									<img src="images/watch_3.png" alt="фотография часов">
+									<h4 class="polosa-block-h4">adriatica adr</h4>
+									<p class="polosa-block-p">$650, 00</p>
+								</div>
+							</div>
+						</div>							
+				</div>	
+
+
+			<div class="tab-b" id="tabs-body__slider-2">				
+
+					<button id="slider-left-2"><img class="slider-left-img" src="images/back_arrow_big.png" alt="стрелка назад"></button>
+					<button id="slider-right-2"><img class="slider-right-img" src="images/forward_arrow_big.png" alt="стрелка вперед"></button>
+						
+						<div id="tabs-body__polosa-2">						
+							<div class="tabs-body__polosa-block">
+								<div class="tabs-body__polosa-block__2">
+									<img src="images/watch_1.png" alt="фотография часов">
+									<h4 class="polosa-block-h4-2">adriatica adr</h4>
+									<p class="polosa-block-p-2">$650, 00</p>
+								</div>
+							</div>
+
+							<div class="tabs-body__polosa-block">
+								<div class="tabs-body__polosa-block__2">
+									<img src="images/watch_2.png" alt="фотография часов">
+									<h4 class="polosa-block-h4-2">seico snzgo7k1</h4>
+									<p class="polosa-block-p-2">$125, 00</p>
+								</div>
+							</div>
+								
+							<div class="tabs-body__polosa-block">
+								<div class="tabs-body__polosa-block__2">
+									<img src="images/watch_3.png" alt="фотография часов">
+									<h4 class="polosa-block-h4-2">roamer rm 220837</h4>
+									<p class="polosa-block-p-2">$250, 00</p>
+								</div>
+							</div>
+
+							<div class="tabs-body__polosa-block">
+								<div class="tabs-body__polosa-block__2">
+									<img src="images/watch_1.png" alt="фотография часов">
+									<h4 class="polosa-block-h4-2">adriatica adr</h4>
+									<p class="polosa-block-p-2">$650, 00</p>
+								</div>
+							</div>
+
+							<div class="tabs-body__polosa-block">
+								<div class="tabs-body__polosa-block__2">
+									<img src="images/watch_2.png" alt="фотография часов">
+									<h4 class="polosa-block-h4-2">adriatica adr</h4>
+									<p class="polosa-block-p-2">$650, 00</p>
+								</div>
+							</div>
+
+							<div class="tabs-body__polosa-block">
+								<div class="tabs-body__polosa-block__2">
+									<img src="images/watch_3.png" alt="фотография часов">
+									<h4 class="polosa-block-h4-2">adriatica adr</h4>
+									<p class="polosa-block-p-2">$650, 00</p>
+								</div>
+							</div>
+						</div>							
+				</div>					
+			</div>
+		</div>		
+	</section>
+
+
+	<section class="sectThree">
+		<div class="sectThree__body">			
+				<img class="sectThree__body-img" src="images/rado.png" alt="логотип">
+				<img class="sectThree__body-img" src="images/swatch.png" alt="логотип">
+				<img class="sectThree__body-img" src="images/omega.png" alt="логотип">
+				<img class="sectThree__body-img" src="images/zenith.png" alt="логотип">	
+		</div>
+	</section>
+
+	<section class="sectFour">
+		<div class="sectFour__body">
+			
+			<div id="block-for-slider">
+        <div id="viewport">
+            <ul id="slidewrapper">
+                <li class="slide"><div class="slide-1">
+					<h3 class="slide-h3">what customers are saying</h3>
+					
+					<div class="slide__customers">
+						<div class="slide__customers-1">
+							<div class="slide__customers-1__block-1"><img class="slide__customers-1__block-1-img" alt="фото клиента" src="images/customer_1.png"></div>
+							<div class="slide__customers-1__block-2">
+								<h4 class="slide__customers-1__block-2-h4">amanda smith</h4>
+								<p class="slide__customers-1__block-2-p">As many of you know, our company has a widefield of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, wheve designers publish their product to sell.</p>
+							</div>
+						</div>
+
+
+						<div class="slide__customers-1">
+							<div class="slide__customers-1__block-1"><img class="slide__customers-1__block-1-img" alt="фото клиента" src="images/customer_2.png"></div>
+							<div class="slide__customers-1__block-2">
+								<h4 class="slide__customers-1__block-2-h4">sandra willims</h4>
+								<p class="slide__customers-1__block-2-p">As many of you know, our company has a widefield of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, wheve designers publish their product to sell.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+                <li class="slide"><div class="slide-1">
+					<h3 class="slide-h3">what customers are saying</h3>
+					
+					<div class="slide__customers">
+						<div class="slide__customers-1">
+							<div class="slide__customers-1__block-1"><img class="slide__customers-1__block-1-img" alt="фото клиента" src="images/customer_1.png"></div>
+							<div class="slide__customers-1__block-2">
+								<h4 class="slide__customers-1__block-2-h4">amanda smith</h4>
+								<p class="slide__customers-1__block-2-p">As many of you know, our company has a widefield of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, wheve designers publish their product to sell.</p>
+							</div>
+						</div>
+
+
+						<div class="slide__customers-1">
+							<div class="slide__customers-1__block-1"><img class="slide__customers-1__block-1-img" alt="фото клиента" src="images/customer_2.png"></div>
+							<div class="slide__customers-1__block-2">
+								<h4 class="slide__customers-1__block-2-h4">sandra willims</h4>
+								<p class="slide__customers-1__block-2-p">As many of you know, our company has a widefield of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, wheve designers publish their product to sell.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+                <li class="slide"><div class="slide-1">
+					<h3 class="slide-h3">what customers are saying</h3>
+					
+					<div class="slide__customers">
+						<div class="slide__customers-1">
+							<div class="slide__customers-1__block-1"><img class="slide__customers-1__block-1-img" alt="фото клиента" src="images/customer_1.png"></div>
+							<div class="slide__customers-1__block-2">
+								<h4 class="slide__customers-1__block-2-h4">amanda smith</h4>
+								<p class="slide__customers-1__block-2-p">As many of you know, our company has a widefield of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, wheve designers publish their product to sell.</p>
+							</div>
+						</div>
+
+
+						<div class="slide__customers-1">
+							<div class="slide__customers-1__block-1"><img class="slide__customers-1__block-1-img" alt="фото клиента" src="images/customer_2.png"></div>
+							<div class="slide__customers-1__block-2">
+								<h4 class="slide__customers-1__block-2-h4">sandra willims</h4>
+								<p class="slide__customers-1__block-2-p">As many of you know, our company has a widefield of activity: we are engaged in the development of products, publish design and code related articles, and support the Market, wheve designers publish their product to sell.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+                
+            </ul>           
+
+            <ul id="nav-btns">
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>
+                <li class="slide-nav-btn"></li>                
+            </ul>
+        </div>
+    </div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="footer__body">
+			<div class="footer__body-textNav">
+			<div class="footer__body-text">
+					<p class="footer__body-text__p"><span class="footer__body-text__span">alw logo</span>American Logo Watch</p>
+				</div>
+
+
+			<div class="footer-navigation">
+					<h4 class="footer-navigation__h4">menu</h4>
+					<nav>
+						<ul class="footer-navigation__ul">
+							<li class="footer-navigation__li"><a class="footer-navigation__li-a" href="#">shop</a></li>
+							<li class="footer-navigation__li"><a class="footer-navigation__li-a" href="#">services</a></li>
+							<li class="footer-navigation__li"><a class="footer-navigation__li-a" href="#">faqs</a></li>
+							<li class="footer-navigation__li"><a class="footer-navigation__li-a" href="#">contact</a></li>
+							<li class="footer-navigation__li"><a class="footer-navigation__li-a" href="#">my account</a></li>
+						</ul>
+					</nav>
+			</div>
+			</div>
+		
+			<div class="footer__body-form">
+				<h4 class="footer__body-form-h4">sing for our newsletter</h4>
+				<form>					
+					<input class="footer__body-form__input-text" type="text" name="email" placeholder="Enter e-mail">
+					<input class="footer__body-form__submit" type="submit" value="send">
+				</form>
+
+			</div>
+		</div>
+
+		<div class="footer__rightIcon">
+			<div class="footer__right">
+				<p>All right reserved 2018</p>
+			</div>
+
+			<div class="footer__Icon">
+				<a class="footer__Icon-a" href="#"><img src="images/twitter.png" alt="twitter"></a>
+				<a href="#"><img src="images/facebook.png" alt="facebook"></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
