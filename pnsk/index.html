@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test task</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header>
+		<div class="header_allcontext">
+			<div class="header_logo">
+				<img class="header_logo_img" src="images/header_logo.png" alt="логотип">
+				<div class="header_logo_h1_p">
+					<h1 class="header_logo_h1">производство азс</h1>
+					<p class="header_logo_p">Наши возможности в Вашем распоряжении!</p>
+				</div>
+			</div>	
+
+			<div class="header_call">
+				<div class="header_call_tel">
+					<span class="header_call_tel_span" id="open">Заказать звонок</span>
+					<div class="header_call_tel_p">
+						<p class="header_call_tel_p-1">+375 (44) 594-41-99</p>
+						<p class="header_call_tel_p-2">+375 (17) 399-61-99</p>
+					</div>
+					<img  class="header_call_tel_img" src="images/header_logo_2.png" alt="логотип">
+				</div>
+			<p class="header_call_p">Представительство АО "ПО "ПНСК" в РБ ООО "АЗС-инжиниринг-БЕЛ"</p>
+			</div>
+		</div>	
+
+		
+		<div class="modal">
+		  	<div class="modal-wrapper">			      
+			    <img class="modalwin_close" id="close" src="images/close.png" alt="закрыть" >
+			    <h2>Обратная связь</h2>	
+
+		    	<form class="popup_form" action="#">             
+		            <input class="popup_form-input" type="text" placeholder="Как Вас зовут?">
+		        </form> 
+		
+		        <form class="popup_form" action="#">             
+		            <input class="popup_form-input" type="text" placeholder="Ваш телефон для связи?">                   
+		        </form> 
+
+		        <button class="closeBtn popup_button">Отправить</button>			
+		  </div>
+		</div>                              
+	</header>
+
+
+	<section class="section_nav">
+		<nav class="section_nav_nav">
+			<ul class="section_nav_ul">
+				<li class="section_nav_li"><a class="section_nav_a" href="#">о компании</a></li>
+				<li class="section_nav_li"><a class="section_nav_a" href="#">продукция</a></li>
+				<li class="section_nav_li"><a class="section_nav_a" href="#">фото/видео</a></li>
+				<li class="section_nav_li"><a class="section_nav_a" href="#">контакты</a></li>
+				<li class="section_nav_li"><a class="section_nav_a section_nav_a_orange" href="#">скачать</a></li>
+			</ul>
+		</nav>
+	</section>
+
+<div class="slideshow-container"> 
+  <div class="mySlides fade mySlides_1"></div>
+  <div class="mySlides fade mySlides_2"></div>
+  <div class="mySlides fade mySlides_3"></div>
+  <div class="mySlides fade mySlides_4"></div>
+  <div class="mySlides fade mySlides_5"></div>
+ 
+	<div class="slideshow-container_spans">
+  		<span class="dot" onclick="currentSlide(1)"></span> 
+  		<span class="dot" onclick="currentSlide(2)"></span> 
+  		<span class="dot" onclick="currentSlide(3)"></span> 
+  		<span class="dot" onclick="currentSlide(4)"></span> 
+  		<span class="dot" onclick="currentSlide(5)"></span> 
+	</div>
+</div>
+	<div id="carouseria">
+        <div class="carouseria-item carouseria-item_img-1">
+        </div>
+        <div class="carouseria-item carouseria-item_img-2">    
+        </div>
+        <div class="carouseria-item carouseria-item_img-3">    
+        </div>
+        <div class="carouseria-item carouseria-item_img-4">     
+        </div>
+        <div class="carouseria-item carouseria-item_img-5">     
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+	<script src="javascript/javascript.js"></script>
+	<script type="application/javascript" src="javascript/carouseria.min.js"></script>
+
+	 <script>
+       
+ setCarousel("500px true horizontal true|5000 true false")
+
+ 
+ function contCheck() {
+     setTimeout(() => {
+         var e = document.getElementById("carouseria").querySelector('[count="0"]'),
+             t = document.getElementById("carouseria").querySelector('[count="1"]');
+         e.style.opacity > 0 ? (document.getElementById("c2_1")
+             .disabled = !0, document.getElementById("c2_2").disabled = !0, document.getElementById("c1_1").disabled = !1,
+             document.getElementById("c1_2").disabled = !1) : t.style.opacity > 0 ? (document.getElementById("c1_1").disabled = !0,
+             document.getElementById("c1_2").disabled = !0, document.getElementById("c2_1").disabled = !1, document.getElementById("c2_2")
+             .disabled = !1) : (document.getElementById("c1_1").disabled = !0, document.getElementById("c1_2").disabled = !0,
+             document.getElementById("c2_1").disabled = !0, document.getElementById("c2_2").disabled = !0)
+     }, 300)
+ }
+ contCheck();
+
+ function evenLis() {
+     for (var c = 0; c < indexContentChild.length; c++) indexContentChild[c].addEventListener("click",
+         () => {
+             contCheck()
+         });
+     for (var d = 0; d < navContent.querySelectorAll('span').length; d++) navContent.querySelectorAll('span')[d]
+         .addEventListener("click", () => {
+             contCheck()
+         })
+ }
+ evenLis();
+
+ function setForm() {
+     var formItems = {};
+     var formShort = document
+         .getElementById("tweakForm").elements;
+     var queryline;
+     for (var g = 0; g < formShort.length; g++) {
+         if (formShort[g].name != "")
+             formItems[formShort[g].name] = formShort[g].value
+     }
+     queryline = formItems.contHeight + formItems.contUnit + " ";
+     queryline += formItems.loopTf + " ";
+     queryline += formItems.movementDir + " ";
+     queryline += formItems.autoplayTf;
+     queryline += (formItems.autoplayTf == "true") ?
+         "|" + formItems.autoplayMilisec + " " : " ";
+     queryline += formItems.indexTf;
+     queryline += (formItems.indexTf == "true" && formItems.indexDir != "horizontal") ?
+         "|" + formItems.indexDir + " " : " ";
+     queryline += formItems.navTf;
+     queryline += (formItems.navTf == "true" && formItems.navDir != "horizontal") ?
+         "|" + formItems.navDir + " " : "";
+     document.getElementById("SHOWQUERY").innerHTML = "setCarousel(\"" + queryline + "\")";
+     setCarousel(queryline)
+ }
+
+ function resetForm() {
+     document.getElementById("tweakForm").reset();
+ }
+ resetForm();
+    </script>
+</body>
+</html>
